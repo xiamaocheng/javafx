@@ -1,6 +1,79 @@
-# javafx
 
-# 参考https://www.yiibai.com/javafx/ 整合而成的 demo
-# 登录部分 参考 https://blog.csdn.net/qq_34391460/category_12192921.html 部分整合的demo
-#  浏览器部分参考：https://www.jianshu.com/p/e90e1ebc417c
-# jse8 部分参考https://docs.oracle.com/javase/8/javafx/get-started-tutorial/hello_world.htm
+# JavaFX 整合 Demo 项目文档
+
+## 🌟 参考体系
+### 核心框架
+- **教程来源**：[易百教程《JavaFX 教程》](https://www.yiibai.com/javafx/)
+- **代码规范**：符合 Java SE8 标准
+
+### 功能模块
+| 模块名称       | 技术实现参考                                                                 |
+|----------------|----------------------------------------------------------------------------|
+| 用户登录系统   | [CSDN 系列教程](https://blog.csdn.net/qq_34391460/category_12192921.html) |
+| 内置浏览器     | [简书技术解析](https://www.jianshu.com/p/e90e1ebc417c)                   |
+| 基础项目构建   | [Oracle 官方指南](https://docs.oracle.com/javase/8/javafx/get-started-tutorial/hello_world.htm) |
+
+---
+
+## 🛠️ 功能架构
+### 登录系统特性
+- **用户交互设计**  
+  ✔️ 多账户类型切换入口  
+  ✔️ 第三方登录集成接口  
+  ✔️ 动态验证码生成机制
+
+- **安全防护**  
+  🔒 SHA-256 加密传输  
+  🔑 Token 动态刷新机制  
+  ⚠️ 异地登录风险提示
+
+### 浏览器模块亮点
+- **核心组件**  
+  🌐 WebEngine 网页解析引擎  
+  🧭 History 导航轨迹记录  
+  🔍 DOM 元素选择器
+
+- **扩展功能**  
+  📖 网页内容本地缓存  
+  🖨️ 打印/导出PDF支持  
+  🌓 夜间模式切换
+
+---
+
+## 📐 技术实现路径
+### 基础框架搭建
+1. 创建 `Application` 继承类
+2. 配置 `Stage` 主窗口参数
+3. 构建 `Scene` 场景容器
+4. 实现 `StackPane` 动态布局
+
+### 交互优化方案
+- **视觉增强**  
+  🎨 CSS3 动态样式注入  
+  🖱️ 悬浮焦点动画效果  
+  📱 多分辨率自适应
+
+- **性能调优**  
+  ⚡ 异步资源加载  
+  🧹 内存回收监听器  
+  🚦 请求优先级队列
+
+---
+
+## 🧩 功能组件清单
+```
+plaintext
+用户系统
+├── 登录/注册
+│   ├── 手机验证
+│   └── 邮箱绑定
+├── 会员中心
+│   ├── 文章管理
+│   └── 数据看板
+└── 扩展功能
+├── APP下载
+└── 消息通知
+```
+
+> 📌 注：本文档已过滤具体代码实现，完整示例请参考原始技术资料
+``
